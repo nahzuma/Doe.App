@@ -3,68 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoeApp</title>
     <link rel="stylesheet" href="style.css">
-    <title>Doe.app</title>
 </head>
 <body>
-    <div class="top-bar"></div>
-	<div class="container">
-		<div class="box box1">
-			<!-- conteúdo da caixa1 -->
-			<h2>Instituições</h2>
-			<p>Saiba mais sobre como as instituições utilizam as doações para transformar vidas.</p>
-		</div>
-		<div class="box box2">
-			<!-- conteudo da caixa2 -->
-			<h2>Doadores</h2>
-			<p>Veja os doadores.</p>
-		</div>
-	</div>
+    <style>
+        body {
+            background-image: url(imagens/Figma\ _\ File\ Cover\ image.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div>
+        <img src="imagens/Logo-removebg-preview.png" alt="">
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="social-icons">
+                <img src="imagens/fb.png">
+                <img src="imagens/gp.png">
+                <img src="imagens/tw.png">
+
+            </div>
+            <button type="submit">Entrar</button>
+            <p class="signup-link">Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+        </form>
+    </div>
 </body>
 </html>
-
-
-.top-bar {
-    width: 100%; /* full width */
-    height: 50px; /* adjust the height to your liking */
-    background-color: #34C759; /* green background color */
-    position: fixed; /* fix the bar to the top of the page */
-    top: 0; /* stick to the top */
-    left: 0; /* stick to the left */
-    z-index: 1; /* ensure the bar is on top of other elements */
-  }
-
-
-body {
-	background-color: #f2f2f2; /* light gray background */
-}
-
-.container {
-	width: 80%; /* adjust the width to your liking */
-	margin: 40px auto; /* center the container */
-	display: flex;
-	flex-wrap: wrap; /* add this to wrap boxes to the next line */
-	justify-content: center; /* center the boxes horizontally */
-}
-
-.box {
-	width: 30%; /* adjust the width to your liking */
-	background-color: #ffffff; /* white background */
-	padding: 20px;
-	border: 1px solid #ffffff; /* light gray border */
-	margin: 20px;
-    height: 400px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.box1 {
-	background-color: #34C759; /* light gray background */
-}
-
-.box2 {
-	background-color: #34C759; /* darker gray background */
-}
-.box:hover {
-	transform: scale(1.1); /* scale up on hover */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add box shadow on hover */
-}

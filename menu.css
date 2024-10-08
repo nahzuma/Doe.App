@@ -1,0 +1,44 @@
+.top-bar {
+    width: 100%; /* full width */
+    height: 50px; /* adjust the height to your liking */
+    background-color: #34C759; /* green background color */
+    position: fixed; /* fix the bar to the top of the page */
+    top: 0; /* stick to the top */
+    left: 0; /* stick to the left */
+    z-index: 1; /* ensure the bar is on top of other elements */
+  }
+
+
+body {
+	background-color: #f2f2f2; /* light gray background */
+}
+
+.container {
+	width: 80%; /* adjust the width to your liking */
+	margin: 40px auto; /* center the container */
+	display: flex;
+	flex-wrap: wrap; /* add this to wrap boxes to the next line */
+	justify-content: center; /* center the boxes horizontally */
+}
+
+.box {
+	width: 30%; /* adjust the width to your liking */
+	background-color: #ffffff; /* white background */
+	padding: 20px;
+	border: 1px solid #ffffff; /* light gray border */
+	margin: 20px;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box1 {
+	background-color: #34C759; /* light gray background */
+}
+
+.box2 {
+	background-color: #34C759; /* darker gray background */
+}
+.box:hover {
+	transform: scale(1.1); /* scale up on hover */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add box shadow on hover */
+}
