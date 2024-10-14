@@ -32,13 +32,22 @@ body {
 }
 
 .box1 {
-	background-color: #34C759; /* light gray background */
+	background-color: #34C759;
+	background-image: url(imagens/empresas.png);
+	background-size: cover;
+	background-position: center;
 }
 
 .box2 {
-	background-color: #34C759; /* darker gray background */
+	background-image: url(imagens/doadores.png);
+	background-size: cover;
+	background-position: center;
 }
 .box:hover {
-	transform: scale(1.1); /* scale up on hover */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add box shadow on hover */
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.h2 {
+	color: #f2f2f2;
 }
